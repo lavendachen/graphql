@@ -70,6 +70,8 @@ app.use('/graphql',graphqlHTTP({
   graphiql: true
 }))
 
+app.use(express.static('public'))
+
 app.listen(3000);
 //1
 // query{ product(productNo:2)}
@@ -84,3 +86,6 @@ app.listen(3000);
 //     price(city: "Toronto")
 //   }}
 // output: {"data": {"getProduct": {"name": "2","price": "202.222"}}}
+// git add .
+// git commit -m 'b.js'
+// git push
