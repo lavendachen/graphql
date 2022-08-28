@@ -12,11 +12,11 @@
 <script>
     function getProduct(){
         const query=`
-        query getProduct($productName: String){
-            getProduct(productName: $productName){name price(city: "Toronto")}
+        query getProduct($productName: String, $city: String){
+            getProduct(productName: $productName){name price(city: $city)}
         }
         `
-        const variables = {productName:'egg'}
+        const variables = {productName:'egg',city:'Calary'}
         fetch('/graphql',{
             method: "POST",
             headers:{
