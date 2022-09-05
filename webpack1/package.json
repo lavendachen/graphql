@@ -1,0 +1,12 @@
+{
+  "name": "webpack1",
+  "version": "1.0.0",
+  "description": "yarn add -D typescript yarn add -D webpack webpack-cli yarn add -D webpack-dev-server yarn add -D html-webpack-plugin clean-webpack-plugin yarn add -D ts-loader yarn add -D cross-env",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
