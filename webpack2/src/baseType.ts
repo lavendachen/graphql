@@ -1,9 +1,9 @@
 (()=>{
-    //1). boolean
+//1). boolean
     let flag:boolean = true
     console.log(flag)
 
-    //2). number
+//2). number
     let a1: number = 10 // 十进制
 let a2: number = 0b1010  // 二进制
 let a3: number = 0o12 // 八进制
@@ -13,7 +13,8 @@ let a4: number = 0xa // 十六进制
 let str1: string = 'string'
 console.log(`${str1} ${a4}`)
 
-//4). undefined and 5). null
+//4). undefined 
+//5). null
 let u: undefined = undefined
 let n: null = null
 
@@ -83,10 +84,7 @@ console.log(fn2(new String('abc')))
 // console.log(fn2('abc') // error
 console.log(fn2(String))
 
-// 12).  #
-// 联合类型
-// 
-// 联合类型（Union Types）表示取值可以为多种类型中的一种
+// 12).  联合类型（Union Types）表示取值可以为多种类型中的一种
 // 需求1: 定义一个一个函数得到一个数字或字符串值的字符串形式值
 function toString2(x: number | string) : string {
   return x.toString()
@@ -102,8 +100,7 @@ function getLength(x: number | string) {
 //   }
 }
 ///////////////////////////////////////////////////
-/* 
-类型断言(Type Assertion): 可以用来手动指定一个值的类型
+/* 13). 类型断言(Type Assertion): 可以用来手动指定一个值的类型
 语法:
     方式一: <类型>值
     方式二: 值 as 类型  tsx中只能用这种方式
